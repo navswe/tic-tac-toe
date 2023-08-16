@@ -1,9 +1,9 @@
 import React from "react";
 
-//takes props as an argument to the Square function
-
 const Square = (props) => {
-  return <div className="square">{props.propsVar}</div>;
+  // return <div className="square">{console.log(props.squares, props.player)}</div>;
+  //verify the props are being passed correctly by using console.log
+  console.log(props.squares, props.player)
 };
 
 export default Square;
