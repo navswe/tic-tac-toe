@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+// import component styles from App.css
 import './App.css';
+// Import Square.js component
+import Square from './Square';
+
 
 function App() {
+  const propVariable = 'This is a prop'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Square propVar = {propVariable}/>
   );
 }
 
+//export this function to make it available outside of this file
+// default keyword tells other files that this is the main funciton of this file
 export default App;
+
+
+
+

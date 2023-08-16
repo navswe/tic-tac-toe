@@ -1,8 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+// Index.js is the bridge file between the components in App.js and the web browser
+
+//import React
+import React from 'react'; 
+
+//Import React "Document Object Model" (DOM) which repersents the entire UI of this application. It is represented as a tree data structure. React uses Virtual DOM which is like a lightweight and faster copy of actual DOM.
+import ReactDOM from 'react-dom/client'; 
+
+// imports the components styles from .css file
 import './index.css';
+
+// import the components from App.js
 import App from './App';
+
+
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,8 +22,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
