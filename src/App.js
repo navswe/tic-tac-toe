@@ -11,6 +11,7 @@ function App() {
   // Using array destructuring to initialize state of the player variable to a boolean of true
   const [player, setPlayer] = useState(true);
 
+  //handleClick function to handle when a user clicks on a square cell, 
   const handleClick = () => {
     setSquares(["", "", "", "", "", "", "", "", ""]);
     setPlayer(true);
@@ -66,3 +67,4 @@ function App() {
 //export this function to make it available outside of this file
 // default keyword tells other files that this is the main funciton of this file
 export default App;
+
